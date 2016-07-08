@@ -17,8 +17,8 @@ docker-commons
 dry
 envinject
 external-monitor-job
+git:2.5.2
 git-client
-git
 gitlab-hook
 gitlab-merge-request-jenkins
 gitlab-plugin
@@ -75,3 +75,4 @@ pmd
 violations
 xunit
 docker-build-publish
+workflow-scm-step
