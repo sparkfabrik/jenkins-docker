@@ -17,10 +17,9 @@ RUN echo 2.11 > /usr/share/jenkins/ref/jenkins.install.UpgradeWizard.state && \
     echo 2.11 > /usr/share/jenkins/ref/jenkins.install.InstallUtil.lastExecVersion
 
 # Copy default configurations.
-COPY config.xml /usr/share/jenkins/ref/
+COPY default/* /usr/share/jenkins/ref/
 
 # Install plugins.
-COPY plugins.txt /usr/share/jenkins/ref/
 RUN /usr/local/bin/plugins.sh /usr/share/jenkins/ref/plugins.txt
 
 # Back to jenkins user.
