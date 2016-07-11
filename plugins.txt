@@ -46,6 +46,7 @@ plot
 pmd
 postbuild-task
 project-stats-plugin
+run-condition
 redmine
 ruby-runtime
 scm-api
