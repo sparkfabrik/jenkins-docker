@@ -50,7 +50,6 @@ run-condition
 redmine
 ruby-runtime
 scm-api
-script-security
 sidebar-link
 simple-theme-plugin
 slack
@@ -78,4 +77,3 @@ violations
 xunit
 docker-build-publish
 workflow-scm-step
-simple-theme-plugin
