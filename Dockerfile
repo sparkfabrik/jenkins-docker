@@ -11,6 +11,7 @@ RUN apt-get update && \
     apt-get install build-essential -y && \
     curl -sSL https://get.docker.com/ | sh && \
     curl -L https://github.com/docker/compose/releases/download/${COMPOSE_VERSION}/docker-compose-`uname -s`-`uname -m` > /usr/local/bin/docker-compose && \
+    sudo usermod -aG docker jenkins && \
     chmod +x /usr/local/bin/docker-compose && \
     echo 2.0 > /usr/share/jenkins/ref/jenkins.install.UpgradeWizard.state && \
     apt-get autoremove -y  && \
