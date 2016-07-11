@@ -20,4 +20,5 @@ RUN echo 2.11 > /usr/share/jenkins/ref/jenkins.install.UpgradeWizard.state
 RUN echo 2.11 > /usr/share/jenkins/ref/jenkins.install.InstallUtil.lastExecVersion
 COPY config.xml /usr/share/jenkins/ref/
 
+WORKDIR /var/jenkins_home
 USER jenkins
