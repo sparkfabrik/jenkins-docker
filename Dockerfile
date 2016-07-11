@@ -7,7 +7,7 @@ RUN apt-get update && \
     apt-get install build-essential -y && \
     curl -sSL https://get.docker.com/ | sh && \
     curl -L https://github.com/docker/compose/releases/download/${COMPOSE_VERSION}/docker-compose-`uname -s`-`uname -m` > /usr/local/bin/docker-compose && \
-    sudo usermod -aG docker jenkins && \
+    usermod -aG docker jenkins && \
     chmod +x /usr/local/bin/docker-compose && \
     usermod -aG docker jenkins && \
     apt-get autoremove -y  && \
