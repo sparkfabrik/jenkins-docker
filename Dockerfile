@@ -13,8 +13,8 @@ RUN apt-get update && \
     apt-get autoremove -y  && \
     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
-RUN echo 2.11 > /usr/share/jenkins/ref/jenkins.install.UpgradeWizard.state && \
-    echo 2.11 > /usr/share/jenkins/ref/jenkins.install.InstallUtil.lastExecVersion
+RUN echo 2.15 > /usr/share/jenkins/ref/jenkins.install.UpgradeWizard.state && \
+    echo 2.15 > /usr/share/jenkins/ref/jenkins.install.InstallUtil.lastExecVersion
 
 # Copy default configurations.
 COPY default/* /usr/share/jenkins/ref/
