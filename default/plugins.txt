@@ -18,7 +18,7 @@ docker-commons
 dry
 envinject
 external-monitor-job
-git:2.5.2
+git
 git-client
 gitlab-hook
 gitlab-merge-request-jenkins
