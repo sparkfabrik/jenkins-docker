@@ -20,7 +20,56 @@ RUN echo 2.15 > /usr/share/jenkins/ref/jenkins.install.UpgradeWizard.state && \
 COPY default/* /usr/share/jenkins/ref/
 
 # Install plugins.
-RUN /usr/local/bin/plugins.sh /usr/share/jenkins/ref/plugins.txt
+RUN /usr/local/bin/install-plugins.sh \
+  ansicolor \
+  authentication-tokens \
+  build-pipeline-plugin \
+  conditional-buildstep \
+  cloverphp \
+  copy-data-to-workspace-plugin \
+  credentials \
+  docker-build-publish \
+  docker-commons \
+  envinject \
+  git \
+  git-client \
+  gitlab-hook \
+  gitlab-merge-request-jenkins \
+  gitlab-plugin \
+  icon-shim \
+  javadoc \
+  jquery \
+  junit \
+  mask-passwords \
+  matrix-project \
+  script-security \
+  nested-view \
+  pam-auth \
+  parameterized-trigger \
+  phing \
+  php \
+  plain-credentials \
+  plot \
+  postbuild-task \
+  project-stats-plugin \
+  run-condition \
+  scm-api \
+  sidebar-link \
+  simple-theme-plugin \
+  slack \
+  ssh-credentials \
+  ssh-slaves \
+  structs \
+  tmpcleaner \
+  token-macro \
+  view-job-filters \
+  workflow-step-api \
+  ws-cleanup \
+  htmlpublisher \
+  violations \
+  xunit \
+  workflow-scm-step
+
 
 # Back to jenkins user.
 USER jenkins
