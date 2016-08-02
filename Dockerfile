@@ -60,6 +60,7 @@ RUN /usr/local/bin/install-plugins.sh \
   ssh-credentials \
   ssh-slaves \
   structs \
+  s3 \
   tmpcleaner \
   token-macro \
   view-job-filters \
