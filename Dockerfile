@@ -1,8 +1,8 @@
-FROM jenkinsci/jenkins:2.15
+FROM jenkinsci/jenkins:2.21
 MAINTAINER alessio.piazza@sparkfabrik.com
 
 USER root
-ENV COMPOSE_VERSION 1.7.1
+ENV COMPOSE_VERSION 1.8.0
 RUN apt-get update && \
     apt-get install build-essential -y && \
     curl -sSL https://get.docker.com/ | sh && \
