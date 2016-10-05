@@ -2,7 +2,7 @@ FROM jenkinsci/jenkins:2.21
 MAINTAINER alessio.piazza@sparkfabrik.com
 
 USER root
-ENV COMPOSE_VERSION 1.8.0
+ENV COMPOSE_VERSION 1.8.1
 ENV DOCKER_ENGINE_VERSION 1.11.2-0
 RUN apt-get update && \
     apt-get install build-essential -y && \
