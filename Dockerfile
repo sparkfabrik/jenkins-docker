@@ -1,4 +1,4 @@
-FROM jenkinsci/jenkins:2.21
+FROM jenkinsci/jenkins:2.27
 MAINTAINER alessio.piazza@sparkfabrik.com
 
 USER root
