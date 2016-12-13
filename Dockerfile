@@ -26,9 +26,11 @@ COPY default/* /usr/share/jenkins/ref/
 
 # Install plugins.
 RUN /usr/local/bin/install-plugins.sh \
+  backup \
   ansicolor \
   authentication-tokens \
   build-pipeline-plugin \
+  build-monitor \
   conditional-buildstep \
   cloverphp \
   copy-data-to-workspace-plugin \
@@ -69,13 +71,58 @@ RUN /usr/local/bin/install-plugins.sh \
   tmpcleaner \
   token-macro \
   view-job-filters \
-  workflow-step-api \
   ws-cleanup \
   htmlpublisher \
   violations \
   xunit \
+  ace-editor \
+  ant \
+  antisamy-markup-formatter \
+  branch-api \
+  cloudbees-folder \
+  cvs \
+  docker-build-step \
+  docker-plugin \
+  docker-workflow \
+  durable-task \
+  external-monitor-job \
+  git-server \
+  github \
+  github-api \
+  github-branch-source \
+  github-organization-folder \
+  google-metadata-plugin \
+  google-oauth-plugin \
+  google-source-plugin \
+  handlebars \
+  jquery-detached \
+  kubernetes \
+  ldap \
+  mailer \
+  mapdb-api \
+  matrix-auth \
+  maven-plugin \
+  momentjs \
+  oauth-credentials \
+  pipeline-build-step \
+  pipeline-input-step \
+  pipeline-rest-api \
+  pipeline-stage-step \
+  pipeline-stage-view \
+  subversion \
+  translation \
+  windows-slaves \
+  workflow-aggregator \
+  workflow-api \
+  workflow-basic-steps \
+  workflow-cps \
+  workflow-cps-global-lib \
+  workflow-durable-task-step \
+  workflow-job \
+  workflow-multibranch \
+  workflow-support \
+  workflow-step-api \
   workflow-scm-step
-
 
 # Back to jenkins user.
 USER jenkins
